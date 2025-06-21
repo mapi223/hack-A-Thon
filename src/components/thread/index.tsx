@@ -88,7 +88,7 @@ function ScrollToBottom(props: { className?: string }) {
   );
 }
 
-function OpenGitHubRepo() {
+/*function OpenGitHubRepo() {
   return (
     <TooltipProvider>
       <Tooltip>
@@ -111,6 +111,7 @@ function OpenGitHubRepo() {
     </TooltipProvider>
   );
 }
+*/
 
 export function Thread() {
   const [artifactContext, setArtifactContext] = useArtifactContext();
@@ -322,9 +323,7 @@ export function Thread() {
                   </Button>
                 )}
               </div>
-              <div className="absolute top-2 right-4 flex items-center">
-                <OpenGitHubRepo />
-              </div>
+              
             </div>
           )}
           {chatStarted && (
@@ -358,19 +357,16 @@ export function Thread() {
                   }}
                 >
                   <LangGraphLogoSVG
-                    width={32}
-                    height={32}
+                    className="h-8 w-auto"
                   />
                   <span className="text-xl font-semibold tracking-tight">
-                    Agent Chat
+                    AeroAssist By Agentify
                   </span>
                 </motion.button>
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="flex items-center">
-                  <OpenGitHubRepo />
-                </div>
+                
                 <TooltipIconButton
                   size="lg"
                   className="p-4"
@@ -433,9 +429,12 @@ export function Thread() {
                 <div className="sticky bottom-0 flex flex-col items-center gap-8 bg-white">
                   {!chatStarted && (
                     <div className="flex items-center gap-3">
-                      <LangGraphLogoSVG className="h-8 flex-shrink-0" />
+                      <LangGraphLogoSVG className="h-10 flex-shrink-0" />
                       <h1 className="text-2xl font-semibold tracking-tight">
-                        Agent Chat
+                        AeroAssist{' '}
+                        <span className="text-sm text-blue-800 font-normal">
+                          by Agentify
+                        </span>
                       </h1>
                     </div>
                   )}
@@ -536,6 +535,7 @@ export function Thread() {
                         )}
                       </div>
                     </form>
+                    
                   </div>
                 </div>
               }

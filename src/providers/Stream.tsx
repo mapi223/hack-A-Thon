@@ -126,7 +126,7 @@ const StreamSession = ({
 };
 
 // Default values for the form
-const DEFAULT_API_URL = "http://localhost:2024";
+const DEFAULT_API_URL = "https://bos-langsmith-platform-frontend.dev.bos.aws.ual.com/lgp/alt-flight-hackathon-7b0fd661eba15ac6bd4d9150997f398d"
 const DEFAULT_ASSISTANT_ID = "agent";
 
 export const StreamProvider: React.FC<{ children: ReactNode }> = ({
@@ -136,7 +136,7 @@ export const StreamProvider: React.FC<{ children: ReactNode }> = ({
   const envApiUrl: string | undefined = process.env.NEXT_PUBLIC_API_URL;
   const envAssistantId: string | undefined =
     process.env.NEXT_PUBLIC_ASSISTANT_ID;
-
+  
   // Use URL params with env var fallbacks
   const [apiUrl, setApiUrl] = useQueryState("apiUrl", {
     defaultValue: envApiUrl || "",
@@ -169,7 +169,7 @@ export const StreamProvider: React.FC<{ children: ReactNode }> = ({
             <div className="flex flex-col items-start gap-2">
               <LangGraphLogoSVG className="h-7" />
               <h1 className="text-xl font-semibold tracking-tight">
-                Agent Chat
+                AeroAssist by Agentify
               </h1>
             </div>
             <p className="text-muted-foreground">
