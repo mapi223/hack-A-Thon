@@ -431,7 +431,7 @@ export function Thread() {
                     <div className="flex items-center gap-3">
                       <LangGraphLogoSVG className="h-10 flex-shrink-0" />
                       <h1 className="text-2xl font-semibold tracking-tight">
-                        AeroAssist{' '}
+                        DREAM{' '}
                         <span className="text-sm text-blue-800 font-normal">
                           by Agentify
                         </span>
