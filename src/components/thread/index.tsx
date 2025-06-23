@@ -359,9 +359,12 @@ export function Thread() {
                   <LangGraphLogoSVG
                     className="h-8 w-auto"
                   />
-                  <span className="text-xl font-semibold tracking-tight">
-                    AeroAssist By Agentify
-                  </span>
+                  <span className="text-2xl font-semibold tracking-tight">
+                        DREAM{' '}
+                        <span className="text-sm text-blue-800 font-normal">
+                          by Agentify
+                        </span>
+                      </span>
                 </motion.button>
               </div>
 
